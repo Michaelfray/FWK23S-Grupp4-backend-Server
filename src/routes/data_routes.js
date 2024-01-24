@@ -24,7 +24,8 @@ router.use(async (req, res, next) => {
   }
 });
 
-router.get('/secret-data', (req, res) => {
+router.get('/', (req, res) => {
+  console.log('Got a request for secret data:', req.user);
     if(req.user.role === 'admin') {
       res.json({ data: 'Secret data for admin!' });
     } else {
