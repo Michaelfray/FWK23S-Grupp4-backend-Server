@@ -11,7 +11,7 @@ router.use(async (req, res, next) => {
     const token = authHeader && authHeader.split('')[1];
         if(!token) return res.status(401).send('Access Denied');
 
-        const { data } = await axios.get('http://auth-server/auth/verify', {
+        const { data } = await axios.get('http://localhost:3000/verify', {
           headers: {
             authorization: `Bearer ${token}`,
             },
