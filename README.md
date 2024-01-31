@@ -1,4 +1,4 @@
-                                                                   Dokumentation av vår Backend server 
+ Dokumentation av vår Backend server 
 
 Säkerhetsfunktioner:
 Vi har implementerat säkerhetsåtgärder för att skydda vår applikation och dess användare: 
